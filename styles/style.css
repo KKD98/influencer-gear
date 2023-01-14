@@ -82,6 +82,16 @@ ul{
     padding: 5px 15px;
 }
 
+/* Logos Style */
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px 20px;
+}
+
 
 /* Media Queries */
 
@@ -130,10 +140,11 @@ ul{
         padding-left: 0;
     }
 
+   
+
     .camera{
-        width: 50%;
-        align-items: center;
-        margin-left: 100px;
+        width: 40%;
+        margin-left: 120px;
     }
 
     .part-title{
@@ -149,13 +160,23 @@ ul{
     }
 
     .part-1-button{
-       margin-left: 120px;
+        margin-left: 130px;
        margin-bottom: 10px;
+    }
+
+    /* For Logos */
+
+    .logos{
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
 }
 
-@media only screen and (max-width:990px) {
+@media only screen and (min-width:673px) and (max-width:990px) {
     header{
         width: 100%;
         padding: 0;
@@ -209,5 +230,15 @@ ul{
        margin-left: 280px;
        margin-bottom: 10px;
        font-size: 20px;
+    }
+
+    /* For Logos */
+
+    .logos{
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
