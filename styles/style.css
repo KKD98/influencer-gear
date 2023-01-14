@@ -1,13 +1,13 @@
 /* import Google Font Poppins */
 
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@500;800&display=swap');
 
-  /* Common Styles */
-body{
+/* Common Styles */
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,33 +15,33 @@ body{
 
 /* Header Styles */
 
-header{
+header {
     padding: 20px 50px;
     margin: 0 auto;
     width: 100%;
     max-width: 1250px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-ul{
+ul {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-.nav-heading{
+.nav-heading {
     font-size: 24px;
     font-weight: 700;
 }
 
 /* Text And Camera Section Styles */
 
-.container{
+.container {
     display: flex;
     margin: 0 auto;
     padding: 20px 50px;
@@ -49,32 +49,32 @@ ul{
     align-items: center;
 }
 
-.part-1 , 
+.part-1,
 .part-2 {
     flex: 50%;
 }
 
-.part-1{
-   padding-left: 50px;
+.part-1 {
+    padding-left: 50px;
 }
 
-.part-2{
+.part-2 {
     padding-left: 160px;
 }
 
-.part-title{
+.part-title {
     font-size: 50px;
     font-weight: 700;
 }
 
-.part-description{
+.part-description {
     font-size: 16px;
     font-weight: 600;
     color: #3A3A3A;
     margin-bottom: 20px;
 }
 
-.part-1-button{
+.part-1-button {
     background-color: #E02C6D;
     color: white;
     border: none;
@@ -84,12 +84,71 @@ ul{
 
 /* Logos Style */
 
-.logos{
+.logos {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
     width: 90%;
     padding: 20px 20px;
+}
+
+/* Collection Styles */
+
+.collection-part {
+    margin: 0 auto;
+    width: 90%;
+    padding-left: 30px;
+
+}
+
+.collection-title {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin-top: 20px;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    height: 475px;
+   margin-right: 30px;
+}
+
+.item {
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.item-pic {
+    width: 100%;
+}
+
+.item-title {
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+}
+
+.item-amount {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.fa-star,
+.fa-regular {
+    color: #FB8200;
+}
+
+.description {
+    color: #787885;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 
@@ -99,23 +158,25 @@ ul{
      For Headers    
 --------------------*/
 
-@media only screen and (max-width:672px){
-    header{
+@media only screen and (max-width:672px) {
+    header {
         width: 100%;
         padding: 0;
         margin: 0;
         /* background-color: blue; */
     }
-    nav{
+
+    nav {
         flex-direction: column;
-       /* background-color: purple; */
-    }
-    .nav-heading{
-       font-size: 14px;
-       /* background-color: aquamarine; */
+        /* background-color: purple; */
     }
 
-    ul{
+    .nav-heading {
+        font-size: 14px;
+        /* background-color: aquamarine; */
+    }
+
+    ul {
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-around;
@@ -129,44 +190,45 @@ ul{
 
     /* For Text and Camera */
 
-    .container{
+    .container {
         flex-direction: column-reverse;
         width: 100%;
         padding: 0;
     }
 
-    .part-1 , .part-2 {
+    .part-1,
+    .part-2 {
         width: 100%;
         padding-left: 0;
     }
 
-   
 
-    .camera{
+
+    .camera {
         width: 40%;
         margin-left: 120px;
     }
 
-    .part-title{
+    .part-title {
         font-size: 28px;
         text-align: center;
         padding: 3px 6px;
-       margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 
-    .part-description{
+    .part-description {
         text-align: center;
         margin-bottom: 10px;
     }
 
-    .part-1-button{
+    .part-1-button {
         margin-left: 130px;
-       margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     /* For Logos */
 
-    .logos{
+    .logos {
         flex-wrap: wrap;
         gap: 10px;
         padding: 0;
@@ -174,71 +236,94 @@ ul{
         margin-bottom: 20px;
     }
 
+    /* For Collection */
+
+    .collections{
+        grid-template-columns: repeat(1 , 1fr);
+        margin-left: 30px;
+    }
+
+    .collection-part{
+        margin: 0;
+
+    }
+
 }
 
 @media only screen and (min-width:673px) and (max-width:990px) {
-    header{
+    header {
         width: 100%;
         padding: 0;
         margin: 0;
-       }
+    }
 
-    nav{
+    nav {
         width: 100%;
         margin: 0;
         padding: 10px 15px;
         justify-content: space-between;
     }
 
-    .nav-heading{
+    .nav-heading {
         font-size: 16px;
-     }
+    }
 
-     /* Text and Camera Section */
+    /* Text and Camera Section */
 
-     .container{
+    .container {
         flex-direction: column-reverse;
         width: 100%;
         padding: 0;
     }
 
-    .part-1 , .part-2 {
+    .part-1,
+    .part-2 {
         width: 100%;
         padding-left: 0;
     }
 
-    .camera{
+    .camera {
         width: 40%;
         align-items: center;
         margin-left: 220px;
     }
 
-    .part-title{
+    .part-title {
         font-size: 36px;
         text-align: center;
         padding: 3px 6px;
-       margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 
-    .part-description{
+    .part-description {
         text-align: center;
         margin-bottom: 20px;
         font-size: 20px;
     }
 
-    .part-1-button{
-       margin-left: 280px;
-       margin-bottom: 10px;
-       font-size: 20px;
+    .part-1-button {
+        margin-left: 310px;
+        margin-bottom: 10px;
+        font-size: 20px;
     }
 
     /* For Logos */
 
-    .logos{
+    .logos {
         flex-wrap: wrap;
         gap: 20px;
         padding: 0;
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+    /* For Collection */
+    .collections{
+        grid-template-columns: repeat(2 , 1fr);
+
+      
+    }
+    
+    
+
 }
